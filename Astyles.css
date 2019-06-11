@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+body p#Version1{
+	border: solid violet 6px;
+	width: 33%;
+	height: 33%;
+	float: left;
+}
+body p#Version2{
+	/*border: solid violet 6px; |This part broke some how and I have been having no luck in figuring out
+	what went wrong and not I am out of time.*/ 
+	width: 33%;
+	height: 33%;
+	float: right;
+	margin-top: 15%;
+}
+body p#Version3{
+	border: solid violet 6px;
+	width: 33%;
+	height: 33%;
+	float: left;
+	margin-top: 5%;
+	margin-left: 60%;
+}
+body p#Version4{
+	border: solid violet 6px;
+	width: 33%;
+	height: 33%;
+	float: right;
+	margin-top: 5%;
+	margin-right: 60%;
+}
+
+/*M5LO5 Demonstrate the use of flexboxes on a web page - the overall impact of using a flex box here 
+is more or less unnoticeable*/
+/*M5LO6 Demonstrate use of properties of flexbox items - The idea here was to stop this main image from
+skewing the entire page to its width, but I am still working on it*/
+#canscene{
+	top: 20px;
+	left: 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/*M5LO7 Demonstrate use of properties of flexbox containers - the impact of using a flexbox and its
+correlating properties is minimal, however it did provide the desired space around the item*/
+/*#about_article{
+	display: flex;
+	justify-content: space-around;
+}*/
+/*FOR SCREENS 480px*/	
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs.- the overall impact this had
+on my page mostly involved removing superfluous elements*/
+@media only screen and (max-width: 480px) {
+	body{
+		width: 100%;
+		height: 100%
+	}
+	#about_article{
+	display: none;
+}
+	#Version1{
+	font-size: 1em;
+	color: purple;
+	background-color: black;
+	}
+	#Version2{
+		font-size: 1em;
+		color: purple;
+		background-color: black;
+	}
+	#canscene{
+		display: none;
+	}
+	footer{
+		margin-top: 480px;
+	}
+}

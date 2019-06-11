@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<!--
+		CIS 155 Project
+		Home Page
+		Author: Alexander Mowry
+		Date:   4/20/2019
+
+		Filename: resources.html
+		  -->
+		  
+
+		<meta charset="utf-8"/>
+		<title> Resources</title>
+
+		<link href="Rstyles.css" rel="stylesheet" />		
+
+
+	</head>
+	<body>
+	<header>
+	<h1>RANDOM RESOURCES!!</h1>
+		<nav>
+			<a href="index.html">HOME BASE!!</a>
+		</nav>
+	</header>
+	
+	
+		<table id="colors">
+			<caption>Krylon Color Pallet</caption>
+			<colgroup>
+				<col id="title" />
+				<col id="blue"/>
+				<col id="red" />
+				<col id="green" />
+			</colgroup>
+			<thead>
+				<tr>
+					<td colspan="4" class="tabletit">Krylon Color Pallet</td>
+				</tr>
+				<tr id="blues">
+					<td>BLUE</td>
+					<td>BLUE</td>
+					<td>BLUE</td>
+					<td>BLUE</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="reds">
+					<td>RED</td>
+					<td>RED</td>
+					<td>RED</td>
+					<td>RED</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr id="greens">
+					<td>GREEN</td>
+					<td>GREEN</td>
+					<td>GREEN</td>
+					<td>GREEN</td>
+				</tr>
+			</tfoot>
+		</table>
+<!--NOTE "won't work any more since Firefox 23 because Mozilla has 
+decided to blocked all unencrypted content on encrypted websites" 
+https://stackoverflow.com/questions/18373592/iframe-contents-cant-appear-in-firefox
+ NOTE-->
+ <!-- M8LO9  Demonstrate the use of the iframe element (HTML) -->
+		<iframe src="index.html" width="500" 
+		height="400" alt="Your browser does not support iframes">
+	
+		</iframe>
+		
+		 <form>
+<!-- M7LO5 Demonstrate the use of a text box in a form -->
+				Full Name:<br>
+				<input type="text" name="fullname"><br>
+				Artist Name:<br>
+				<input type="text" name="artname">
+				<br>
+<!-- M7LO6 Demonstrate the use of check boxes in a form -->
+				<input type="checkbox" name="Medium" value="Paint"> Painter<br>
+				<input type="checkbox" name="Medium" value="Pen"> Drawer<br>
+				<input type="checkbox" name="Medium" value="Craft"> Crafter<br>
+				<input type="checkbox" name="Medium" value="Sculpt"> Sculpter<br>
+				
+				<br>
+<!-- M7LO10 Demonstrate the use of a submit button in a form -->
+				<input type="submit" value="Submit">
+				<form action="#" method="get"> 
+		</form> 
+<!--M8LO7 Demonstrate the use of the <audio> element for embedding audio in a Web page (HTML)-->		
+		<audio 
+		controls src="Spray_can_sound.mp3">
+		</audio>
+	
+	</body>
+
+
+</html>
